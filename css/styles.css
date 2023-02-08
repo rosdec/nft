@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(font/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.blu-poste {
+    color: #274AB9 !important;
+}
+
+.giallo-poste {
+    background-color: #EEDC00;
+}
+
+.blu-bg-poste {
+    background-color: #274AB9;
+}
+
+@media only screen and (min-width: 992px) {
+    .content {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+}
+
+.datepicker-date-display {
+    flex: 1 auto;
+    background-color: #274AB9;
+    color: #fff;
+    padding: 20px 22px;
+    font-weight: 500;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a.active {
+    background-color: rgba(150, 150, 200, 0.1);
+    outline: none;
+}
+
+li.indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #274AB9 !important;
+    will-change: left, right;
+}
+
+.logo-img {
+    vertical-align: middle;
+    height: 50px;
+}
+
+.sidenav-icon {
+    font-size: x-large;
+}
+
+.italy {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.italy-sidenav {
+    float: left;
+    margin-right: 15px;
+    width: 40px;
+}
+
+.logo-poste {
+    left: 50px !important;
+}

@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html>
-<script src="./js/aframe.min.js"></script>
-<script src="./js/aframe-ar.js"></script>
-<body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-        <a-assets>
-            <a-asset-item id="animated-asset" src="./gltf/shiba/scene.gltf"></a-asset-item>
-        </a-assets>
-        <a-marker id="animated-marker" type='barcode' value='6'>
-            <a-entity gltf-model="#animated-asset" scale="2">
-            </a-entity>
-        </a-marker>
-        <a-entity camera></a-entity>
-    </a-scene>
+
+<head>
+  <link rel="stylesheet" href="./css/materialize.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper giallo-poste">
+          <a href="#" data-target="sidenav" class="sidenav-trigger full hide-on-large-only">
+            <i class="material-icons blu-poste">menu</i>
+          </a>
+          <a href="/">
+            <div class="brand-logo left logo-poste">
+              <img src="img/logo.png">
+            </div>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="waves-effect blu-poste" href="#!"><i
+                  class="material-icons blu-poste">photo_camera</i>Camera</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav sidenav-close invisible-top" id="sidenav">
+      <li><a class="waves-effect" href="#!"><i class="material-icons blu-poste">photo_camera</i>Camera</a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/bowser.png">
+            <span class="card-title blu-poste"><strong>Bowser</strong></span>
+            <a href="scene.html" class="btn-floating halfway-fab waves-effect waves-light blue darken-4"><i
+                class="material-icons">photo_camera</i></a>
+          </div>
+          <div class="card-content">
+            <p>Bowser is a fictional character and the main antagonist in the Mario video game franchise, developed and
+              published by Nintendo. Bowser is depicted as a large, powerful, and fearsome dragon-like creature who
+              constantly tries to kidnap Princess Peach and take over the Mushroom Kingdom.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/materialize.min.js"></script>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {});
+  });
+</script>
 
 </html>
